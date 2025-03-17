@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <style>
+        html, body{
+            height: 100%;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+        }
+        ul{
+            display: flex;
+        }
+        a{
+            padding: 0px 25px;
+        }
+        li{
+            list-style: none;
+        }
+        
+        .mobile-menu{
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul, button {
+                display: none; /* Hide normal menu */
+            }
+            .mobile-menu{
+                display: flex;
+            }
+        }
+
+.custom-shape-divider-bottom-1741569260 {
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1741569260 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 101px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1741569260 .shape-fill {
+    fill: aquamarine;
+}
+
+.mid{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 90vh;
+}
+.foot{
+    height: 90vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+    <div class="mobile-menu">
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Services</a>
+    </div>
+
+    <section class="mid">
+        <h1>Meu Portfolio</h1>
+        <p></p>
+        <div class="custom-shape-divider-bottom-1741569260">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    <section class="foot">
+        <div class="card">
+        <h1>Footer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+    </section>
+</div>
+</body>
+</html>
